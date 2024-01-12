@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presley Black</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <h1>Presley Black</h1>
+        <p>Full Stacked Developer</p>
+    </div>
+</header>
+<nav aria-label="Main navigation">
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="nav-links">
+        <li><a href="#about" aria-label="About section">About</a></li>
+        <li><a href="#projects" aria-label="Projects section">Projects</a></li>
+        <li><a href="#skills" aria-label="Skills section">Skills</a></li>
+        <li><a href="#contact" aria-label="Contact section">Contact</a></li>
+    </ul>
+</nav>
+<section id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>Experienced professional, retired Air force Veteran with a background in medical logistics and a passion for web development.
+        Skilled in technology, programming, and problem-solving, successfully transitioning into a web development role. Proficient in utilizing programming languages,
+        frameworks, and libraries to create visually appealing and user-friendly web applications. Committed to delivering high-quality projects, continuously expanding technical skills,
+        and staying up-to-date with industry trends. Seeking opportunities to contribute to innovative web development initiatives in a collaborative team environment.</p>
+</section>
+<section id="projects" data-aos="fade-right">
+    <h2>Projects</h2>
+    <div class="project">
+        <img src="path/to/project-image.jpg" alt="Project Description" class="open-lightbox">
+        <h3>Go Travel</h3>
+        <p>Introducing Go Travel, your ultimate travel companion! Go Travel is a revolutionary web app that takes your travel planning to the next level.</p>
+    </div>
+    <!-- Additional projects here -->
+</section>
+<section id="skills" data-aos="fade-left">
+    <h2>Skills</h2>
+    <ul>
+        <li>Skill 1</li>
+        <li>Skill 2</li>
+        <!-- Additional skills here -->
+    </ul>
+</section>
+<section id="contact" data-aos="zoom-in">
+    <form action="https://formspree.io/f/{your_unique_id}" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="_replyto" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+<footer>
+    <p>Copyright © Your Name. All Rights Reserved.</p>
+</footer>
+<div class="lightbox" id="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img class="lightbox-content" src="">
+    <div class="caption"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
