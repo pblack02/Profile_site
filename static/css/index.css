@@ -6,16 +6,17 @@
 
 body {
     font-family: 'Playfair Display', serif;
-    background-color: rgb(211, 211, 211);
+    background-color: #303030;
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-p{
-    color: rgb(77, 77, 77);
+p, h3, h2{
+    color: #f0dfc8;
 }
+
 
 a, .btn {
     transition: all 300ms ease;
@@ -37,16 +38,17 @@ nav {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
+    color: #f0dfc8;
 }
 
 a {
-    color: black;
+    color: #f0dfc8;
     text-decoration: none;
     text-decoration-color: white;
 }
 
 a:hover {
-    color: gray;
+    color: #ffb1a5;
     text-decoration: underline;
     text-underline-offset: .5rem;
     text-decoration-color: white;
@@ -54,6 +56,7 @@ a:hover {
 
 .logo {
     font-size: 2rem;
+    color: #f0dfc8;
 }
 
 .logo:hover {
@@ -83,7 +86,7 @@ a:hover {
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
+    background-color: white;
     transition: all 0.3ms ease-in-out;
 }
 
@@ -91,7 +94,7 @@ a:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: white;
+    background-color: #303030;
     width: fit-content;
     max-height: 0;
     overflow: hidden;
@@ -103,7 +106,7 @@ a:hover {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: #f0dfc8;
     text-decoration: none;
     transition: all 0.3ms ease-in-out;
 }
@@ -172,7 +175,7 @@ section {
 
 .profile-pic {
     border-radius: 50%;
-    border: 0.2rem black solid;
+    border: 0.1rem #ffb1a5 solid;
 }
 
 .section_text {
@@ -196,9 +199,10 @@ section {
 .title {
     font-size: 3rem;
     text-align: center;
+    color: #ffb1a5;
     opacity: 0;
     animation: fadeIn 1.5s ease forwards;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+    text-shadow: 1px 1px 1px #f0dfc8;
 }
 
 @keyframes fadeIn {
@@ -230,40 +234,44 @@ section {
 
 .btn {
     font-weight: 600;
-    transition: all 300ms ease;
+    /*transition: all 300ms ease;*/
     padding: 1rem;
     width: 8rem;
     border-radius: 2rem;
+    /*color: black;*/
 }
 
-.btn-color-1, .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
-}
+/*.btn-color-2 {*/
+/*    border: #ffb1a5 0.1rem solid;*/
+/*}*/
 
 .btn-color-1:hover, .btn-color-2:hover {
     cursor: pointer;
 }
 
 .btn-color-1, .btn-color-2:hover{
-    background: rgb(53, 53, 53);
-    color: white;
+    background: #ffb1a5;
+    color: black;
+    border: #f0dfc8 0.1rem solid;
 }
 
-.btn-color-1:hover {
-    background: rgb(0, 0, 0);
-}
-
-.btn-color-2 {
+.btn-color-1:hover, .btn-color-2{
     background: none;
+    color: #f0dfc8;
+    border: #ffb1a5 0.1rem solid;
 }
 
-.btn-color-2:hover {
-    border: rgb(255, 255, 255) 0.1rem solid;
-}
+/*.btn-color-2 {*/
+/*    background: none;*/
+/*}*/
+
+/*.btn-color-2:hover {*/
+/*    border: #ffb1a5 0.1rem solid;*/
+/*}*/
 
 .btn-container a {
     text-decoration: none;
-    color: unset;
+    color: black;
 }
 
 /*About Section*/
@@ -285,7 +293,7 @@ section {
 
 .about-pic {
     border-radius: 2rem;
-    border: 0.2rem black solid;
+    border: 0.1rem #ffb1a5 solid;
     /*height: 430px;*/
     /*width: 400px;*/
     /*margin: auto 0;*/
@@ -304,9 +312,9 @@ section {
 .detail-container {
     padding: 1rem;
     flex: 1;
-    background: white;
+    background-color: #303030;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: #795833 0.1rem solid;
     text-align: center;
 }
 
@@ -322,7 +330,7 @@ section {
 }
 
 .skills-sub-title{
-    color: rgb(85, 85, 85);
+    color: #f0dfc8;
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 2rem;
@@ -362,8 +370,8 @@ article .icon {
 }
 
 .colored-container {
-    border-color: rgb(163, 163, 163);
-    background-color: rgb(250, 250, 250);
+    border-color: #795833;
+    background-color: #303030;
 }
 
 .project-image {
@@ -374,13 +382,13 @@ article .icon {
     border-radius: 2rem;
 }
 
-.btn-project{
-    color: black;
-    border-color: rgb(163, 163, 163);
-}
+/*.btn-project{*/
+/*    color: black;*/
+/*    border-color: rgb(163, 163, 163);*/
+/*}*/
 
 .project-title{
-    color: black;
+    color: #f0dfc8;
     margin: 1rem;
 }
 
@@ -397,8 +405,8 @@ article .icon {
     display: flex;
     justify-content: center;
     border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    background: rgb(250, 250, 250);
+    border: #795833 0.1rem solid;
+    /*background: rgb(250, 250, 250);*/
     margin: 3rem auto;
     padding: 0.5rem;
 }
