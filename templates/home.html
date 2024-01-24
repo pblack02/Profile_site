@@ -35,7 +35,7 @@
         <div class="menu-links">
             <ul>
                 <li><a href="#about" onclick="toggleNav()">About</a></li>
-                <li><a href="#skills" onclick="toggleNav()">Experience</a></li>
+                <li><a href="#skills" onclick="toggleNav()">Skills</a></li>
                 <li><a href="#projects" onclick="toggleNav()">Projects</a></li>
                 <li><a href="#contact" onclick="toggleNav()">Contact</a></li>
             </ul>
@@ -49,16 +49,16 @@
     <div class="section_text">
         <p class="section_text_p1">Hello, I'm</p>
         <h1 class="title">Presley Black</h1>
-        <p class="section_text_p2">Full Stacked Developer</p>
+        <p class="section_text_p2">Full Stack Developer</p>
         <div class="btn-container">
-            <button class="btn btn-color-2" onclick="location.href='.#contact'">Contact Me</button>
-            <button class="btn btn-color-1">Button 2</button>
+            <button class="btn btn-color-2 pulse" onclick="location.href='.#contact'">Contact Me</button>
+            <button class="btn btn-color-1 pulse" onclick="window.open('https://docs.google.com/document/d/1fGqkiWG-wyx72TFCD7wqFfsO07qh34ySMFzOHQBR0qY/edit?usp=sharing', '_blank')">See Resume</button>
         </div>
         <div id="social-container">
-            <img src="../static/img/linkedin.png" alt="My linkedin profile." class="icon"
-                 onclick="location.href= 'https://www.linkedin.com/in/presley-black-424297136/'">
-            <img src="../static/img/github.png" alt="My github profile." class="icon"
-                 onclick="location.href= 'https://github.com/pblack02'">
+            <img src="../static/img/linkedin.png" alt="My linkedin profile." class="icon icon-hover"
+                 onclick="window.open('https://www.linkedin.com/in/presley-black-424297136/', '_blank')">
+            <img src="../static/img/github.png" alt="My github profile." class="icon icon-hover"
+                 onclick="window.open('https://github.com/pblack02', '_blank')">
         </div>
     </div>
 </section>
@@ -74,27 +74,26 @@
                 <div class="detail-container">
                     <img src="../static/img/certification.png" alt="Experience icon" class="icon">
                     <h3>Experience</h3>
-                    <p>2+ years <br>Full Stacked Developer</p>
+                    <p>2+ years <br>Full Stack Developer</p>
                 </div>
                 <div class="detail-container">
                     <img src="../static/img/education.png" alt="Education icon" class="icon">
                     <h3>Education</h3>
-                    <p>Full Stacked Developer Certification<br>Codeup Oct.2023</p>
-                    <p>Python and Django Full Stacked Developer Certification <br>Udemy Jan.2024</p>
+                    <p>Full Stack Developer Certification<br>Codeup Oct.2023</p>
+                    <p>Python and Django Full Stack Developer Certification <br>Udemy Jan.2024</p>
                 </div>
             </div>
             <div class="text-container">
                 <p>Experienced professional, retired Air force Veteran with a background in medical logistics and a
-                    passion for web development. Skilled in technology, programming, and problem-solving, successfully
-                    transitioning into a web development role. Proficient in utilizing programming languages,
-                    frameworks, and libraries to create visually appealing and user-friendly web applications. Committed
-                    to delivering high-quality projects, continuously expanding technical skills, and staying up-to-date
-                    with industry trends. Seeking opportunities to contribute to innovative web development initiatives
-                    in a collaborative team environment.</p>
+                    passion for web development. Skilled in technology, programming, and problem-solving,successfully
+                    transitioning into a web development role.
+                    <br>
+                    Proficient in utilizing programming languages,frameworks, and libraries to create visually appealing and user-friendly web applications. Committed
+                    to delivering high-quality projects, continuously expanding technical skills, and staying up-to-date with industry trends. Seeking opportunities to contribute to innovative web development initiatives in a collaborative team environment.</p>
             </div>
         </div>
     </div>
-    <a href="#skills"><img src="../static/img/arrow-down.png" alt="Arrow Icon" class="icon arrow"></a>
+    <a href="#skills"><img src="../static/img/arrow-down.png" alt="Arrow Icon" class="icon arrow icon-hover"></a>
 </section>
 <section id="skills">
     <p class="section_text_p1">Explore My</p>
@@ -230,11 +229,11 @@
             </div>
         </div>
     </div>
-    <a href="#projects"><img src="../static/img/arrow-down.png" alt="Arrow Icon" class="icon arrow"></a>
+    <a href="#projects"><img src="../static/img/arrow-down.png" alt="Arrow Icon" class="icon arrow icon-hover"></a>
 </section>
 <section id="projects">
     <p class="section_text_p1">Welcome To My</p>
-    <h1 class="title">Projects!</h1>
+    <h1 class="title">Projects</h1>
     <div class="skills-article">
         <div class="about-containers">
             <div class="detail-container colored-container">
@@ -243,7 +242,7 @@
                 </div>
                 <h2 class="skills-sub-title project-title">GoTravel</h2>
                 <div class="skills-detail">
-                    <p>"Go Travel" is an innovative web application designed to transform the way users plan their travels. It acts as a personal travel agent, simplifying the creation of tailored itineraries. The app's standout features include the ability to discover hidden travel destinations, meticulously plan each day, and the convenience of saving and sharing travel plans. It enhances the travel planning process, making it an enjoyable and straightforward experience, thus turning complicated travel preparation into an exciting journey.</p>
+                    <p>GoTravel redefines travel planning with its user-friendly interface and powerful features. This web app serves as your personal travel guide, allowing you to effortlessly discover hidden gems, craft detailed itineraries, and share your plans. From day-to-day scheduling to integration with external APIs, GoTravel turns complex travel preparation into an engaging and seamless experience.</p>
                 </div>
                 <div class="skills-list">
                     <p>Skills Used :</p>
@@ -265,49 +264,76 @@
             </div>
             <div class="detail-container colored-container">
                 <div class="skills-container">
-                    <img src="../static/img/GoTravel.png" alt="GoTravel Home Picture" class="project-image">
+                    <img src="../static/img/Coffee_Co..png" alt="Coffee Co. Home." class="project-image">
                 </div>
-                <h2 class="skills-sub-title project-title">Project 2</h2>
+                <h2 class="skills-sub-title project-title">Three Broomstick Coffee Co.</h2>
+                <div class="skills-detail">
+                    <p>The Three Broomstick Coffee Co. project involved a comprehensive revamp of the company’s web presence. Focused on modernizing an outdated HTML structure, I introduced interactive design elements and key features to enhance the user experience. This project showcases my skills in  creating intuitive, and user-friendly interfaces for a better customer engagement.</p>
+                </div>
+                <div class="skills-list">
+                    <p>Skills Used:</p>
+                    <ul>
+                        <li>HTML/CSS Refactoring</li>
+                        <li>JavaScript Development</li>
+                        <li>Version Control and Collaboration</li>
+                        <li>DOM Manipulation</li>
+                        <li>Form Handling and Local Data Storage</li>
+                    </ul>
+                </div>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 btn-project">
-                        Live Site
-                    </button>
-                    <button class="btn btn-color-2 btn-project">
-                        See More.
+<!--                    <button class="btn btn-color-2 btn-project">-->
+<!--                        Live Site-->
+<!--                    </button>-->
+                    <button class="btn btn-color-2 btn-project" onclick="window.open('https://github.com/Coffee-Project-Presley-Emily/coffee-project', '_blank')">
+                       Github
                     </button>
                 </div>
             </div>
             <div class="detail-container colored-container">
                 <div class="skills-container">
-                    <img src="../static/img/GoTravel.png" alt="GoTravel Home Picture" class="project-image project-3">
+                    <img src="../static/img/starsocial.png" alt="Star Social Home." class="project-image project-3">
                 </div>
-                <h2 class="skills-sub-title project-title">Project 3</h2>
+                <h2 class="skills-sub-title project-title">Star Social</h2>
+                <div class="skills-detail">
+                    <p>A unique space-themed blog platform, built from the ground up. It stands out for its enhanced features like group creation, post management, and the innovative option for group creators to delete their groups. This addition not only refines the platform’s administrative capabilities but also enriches the user experience. My role in this project spanned full-stack development, creative design, and database management, resulting in a platform that is both visually appealing and functionally robust.</p>
+                </div>
+                <div class="skills-list">
+                    <p>Skills Used:</p>
+                    <ul>
+                        <li>Full-Stack Web Development</li>
+                        <li>Creative Design</li>
+                        <li>Advanced Feature Implementation</li>
+                        <li>User Experience Improvement</li>
+                        <li>Database Management</li>
+                    </ul>
+                </div>
                 <div class="btn-container">
-                    <button class="btn btn-color-2 btn-project">
-                        Live Site
-                    </button>
-                    <button class="btn btn-color-2 btn-project">
-                        See More.
+<!--                    <button class="btn btn-color-2 btn-project">-->
+<!--                        Live Site-->
+<!--                    </button>-->
+                    <button class="btn btn-color-2 btn-project" onclick="window.open('https://github.com/pblack02/Lean_Python/tree/main/simplesocial', '_blank')">
+                        Github
                     </button>
                 </div>
             </div>
         </div>
     </div>
-    <a href="#contact"><img src="../static/img/arrow-down.png" alt="Arrow Icon" class="icon arrow"></a>
+    <a href="#contact"><img src="../static/img/arrow-down.png" alt="Arrow Icon" class="icon arrow icon-hover"></a>
 </section>
 <section id="contact">
-    <p class="section_text_p1">Hello</p>
+    <p class="section_text_p1">Let's Connect</p>
     <h1 class="title">Contact Me!</h1>
-    <div class="upper-contact-info">
+    <div class="upper-contact-info pulse">
         <div class="contact-info">
             <img src="../static/img/email.png" alt="Email icon" class="icon contact-icon icon-email">
-            <p><a href="mailto:presleyblack24@gmail.com">Example@gmail.com</a></p>
+            <p><a href="mailto:presleyblack24@gmail.com">Presleyblack24@gmail.com</a></p>
         </div>
         <div class="contact-info">
             <img src="../static/img/linkedin.png" alt="Linkedin icon" class="icon contact-icon">
-            <p><a href="https://www.linkedin.com/in/presley-black-424297136/">Linkedin</a></p>
+            <p><a href="https://www.linkedin.com/in/presley-black-424297136/" target="_blank">Linkedin</a></p>
         </div>
     </div>
+    <a href="#desktop-nav"><img src="../static/img/up-arrow.png" alt="Arrow Icon" class="icon arrow arrow-up icon-hover"></a>
 </section>
 <footer>
     <nav>
@@ -322,9 +348,6 @@
     </nav>
     <p>Copyright &#169; 2024 Presley Black. All rights reserved</p>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
 <script src="{% static 'js/index.js' %}"></script>
 </body>
 </html>

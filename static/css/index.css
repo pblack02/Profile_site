@@ -39,6 +39,7 @@ nav {
     list-style: none;
     font-size: 1.5rem;
     color: #f0dfc8;
+
 }
 
 a {
@@ -163,7 +164,7 @@ section {
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 80vh;
+    height: 96vh;
 }
 
 .section_pic-container {
@@ -197,19 +198,40 @@ section {
 }
 
 .title {
-    font-size: 3rem;
+    /*font-size: 3rem;*/
+    /*text-align: center;*/
+    /*color: #ffb1a5;*/
+    /*text-shadow: 1px 1px 1px #f0dfc8;*/
+    font-size: 3rem; /* or use vw for responsiveness */
     text-align: center;
     color: #ffb1a5;
-    opacity: 0;
-    animation: fadeIn 1.5s ease forwards;
-    text-shadow: 1px 1px 1px #f0dfc8;
+    text-shadow: 2px 2px 3px #f0dfc8;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /*background: rgba(255, 255, 255, 0.5);*/
+    /*border: 1px solid #ffd1d1;*/
+    padding: 2px;
+    animation: fadeIn 2s;
+    /*opacity: 0;*/
+    /*animation: fadeIn 2s ease-in-out;*/
+    /*animation: fadeIn 2s cubic-bezier(0.1, 0.7, 1.0, 0.1);*/
+    /*animation-fill-mode: forwards;*/
 }
 
+/*@keyframes fadeIn {*/
+/*    to {*/
+/*        opacity: 1;*/
+/*    }*/
+/*}*/
+/*@keyframes fadeIn {*/
+/*    from { opacity: 0.5; }*/
+/*    to { opacity: 1; }*/
+/*}*/
 @keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
+
 
 #social-container {
     display: flex;
@@ -222,6 +244,11 @@ section {
 .icon {
     cursor: pointer;
     height: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.icon-hover:hover {
+    transform: scale(1.5);
 }
 
 /*Buttons*/
@@ -297,6 +324,10 @@ section {
     /*height: 430px;*/
     /*width: 400px;*/
     /*margin: auto 0;*/
+}
+
+.text-container {
+    letter-spacing: 1px;
 }
 
 .arrow {
@@ -399,9 +430,13 @@ article .icon {
 .project-image {
     width: 90%;
     height: 90%;
-    /*border-radius: 2rem;*/
     margin-left: .9rem;
-    border-radius: 2rem;
+    /*border-radius: 2rem;*/
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.2);
 }
 
 
@@ -422,6 +457,7 @@ article .icon {
     flex-direction: column;
     justify-content: center;
     height: 80vh;
+    position: relative;
 }
 
 .upper-contact-info {
@@ -471,6 +507,41 @@ footer p {
 /*    height: 20rem;*/
 /*    width: 20rem;*/
 /*    overflow: auto;*/
+/*}*/
+
+.arrow-up {
+    height: 3rem;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+
+
+/*@media  screen and (max-width: 1500px){*/
+/*    #skills {*/
+/*        height: 90vh;*/
+/*        gap: 2rem;*/
+/*    }*/
+/*    #projects {*/
+/*        height: 96vh;*/
+/*    }*/
 /*}*/
 
 
@@ -525,10 +596,10 @@ footer p {
         padding-top: 2px;
     }
     .project-image{
-        margin-left: 1rem;
+        margin-left: .4rem;
     }
     .project-3 {
-        margin-left: 1.5rem;
+        margin-left: 0.7rem;
     }
 }
 
@@ -581,6 +652,7 @@ footer p {
         width: auto;
         justify-content: center;
         height: 50vw;
+        margin-top: 15px;
     }
     .section_text_p2 {
         font-size: 1.5rem;

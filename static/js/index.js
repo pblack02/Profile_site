@@ -6,6 +6,16 @@ function toggleNav(){
     icon.classList.toggle("open");
 }
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 
 // // Object containing data for each project
 // let projectData = {
