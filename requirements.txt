@@ -11,7 +11,7 @@ conda-libmamba-solver @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00
 conda-package-handling @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_99vcqjo8cf/croot/conda-package-handling_1690999935230/work
 conda_package_streaming @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_d5wg6eonuu/croot/conda-package-streaming_1690987980119/work
 cryptography @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_19sc_35nzq/croot/cryptography_1694211574676/work
-Django==5.0.1
+Django==5.0.2
 idna @ file:///Users/ec2-user/ci_py311/idna_1678315819133/work
 jsonpatch @ file:///tmp/build/80754af9/jsonpatch_1615747632069/work
 jsonpointer==2.1
